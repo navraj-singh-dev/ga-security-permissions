@@ -11,8 +11,7 @@ jobs:
     steps:
       - name: Assign label
         run: |
-          issue_title=${{ env.title }}
-          if [[ "$issue_title" == *"bug"* ]]; then
+          if [[ "$title" == *"bug"* ]]; then
           echo "Issue is about a bug!"
           else
           echo "Issue is not about a bug"
